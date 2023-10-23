@@ -26,7 +26,7 @@
   
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://chat.openai.com/c/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/niha1n/DRUMP/blob/main/LICENSE) file for details.
 
 ## Acknowledgments
 
