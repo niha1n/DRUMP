@@ -33,6 +33,10 @@ function Home() {
     fetchData();
   }, []);
 
+  if(error){
+    console.log(error)
+  }
+
   return (
     <>
       <div className="home-wrapper h-screen  p-10 ">
