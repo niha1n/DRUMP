@@ -27,9 +27,13 @@ function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-transparent rounded-box w-52 "
           >
             <li>
-              <a className="hover:text-white focus:bg-#009013  " href="/">
-                Home
-              </a>
+            <NavLink
+            to="/"
+            exact
+            className="hover:text-white focus:bg-#009013"
+          >
+            Home
+          </NavLink>
             </li>
             {/* <li>
               <a>Parent</a>
@@ -43,13 +47,21 @@ function Navbar() {
               </ul>
             </li> */}
             <li>
-              <a className="hover:text-white focus:bg-#009013" href="/about">
-                About
-              </a>
+              
+              <NavLink
+            to="/about"
+            exact
+            className="hover:text-white focus:bg-#009013"
+          >
+            About
+          </NavLink>
             </li>
           </ul>
         </div>
-        <a className=" drump  spacin tracking-widest    py-1 normal-case text-2xl" href='/'>
+        <a
+          className=" drump  spacin tracking-widest    py-1 normal-case text-2xl"
+          href="/"
+        >
           D<span className="text-[#006300]">r</span>UMP
         </a>
       </div>
@@ -63,7 +75,6 @@ function Navbar() {
           >
             Home
           </NavLink>
-          {/* <a className='text-lg p-1 ' href="/">Home</a>  */}
         </div>
         <div>
           <NavLink
@@ -74,7 +85,6 @@ function Navbar() {
           >
             About
           </NavLink>
-          {/* <a className='text-lg p-1' href="">About</a>  */}
         </div>
       </div>
       <div className="navbar-end">

@@ -15,7 +15,7 @@ function Home() {
         {
           headers: {
             Accept: 'application/hal+json',
-            'X-RapidAPI-Key':process.env.REACT_APP_API_KEY,
+            'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
             'X-RapidAPI-Host': process.env.REACT_APP_API_URL,
           },
         }
@@ -33,8 +33,8 @@ function Home() {
     fetchData();
   }, []);
 
-  if(error){
-    console.log(error)
+  if (error) {
+    console.log(error);
   }
 
   return (
@@ -42,7 +42,7 @@ function Home() {
       <div className="home-wrapper h-screen  p-10 ">
         <Card quote={quote} loading={loading} />
 
-        {loading?'':<Nextbtn handleClick={fetchData} />}
+        {loading ? '' : <Nextbtn handleClick={fetchData} />}
       </div>
     </>
   );
